@@ -68,7 +68,7 @@ export interface RuntimeConfig {
   useDynamicHeights: boolean
 }
 
-const lookerHost = 'https://treety.cloud.looker.com'
+const lookerHost = 'mycompany.looker.com'
 
 // A dashboard that the user can see. Set to '-' or 0 to disable dashboard demo.
 // dashboardId can be a numeric id or a slug string.
@@ -76,7 +76,7 @@ const dashboardId: number | string = 1
 
 // A Look that the user can see. Set to 0 to disable look demo.
 // lookId must be numeric. Slugs are NOT supported.
-const lookId = 10
+const lookId = 1
 
 // An Explore that the user can see. Set to '-' to disable explore demo.
 const exploreId = 'thelook::orders'
