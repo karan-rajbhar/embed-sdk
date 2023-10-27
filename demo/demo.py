@@ -101,6 +101,7 @@ def api_create_signed_url(embed_url, user, HOST, looker_api_sdk):
   target_url =  'https://' + HOST + urllib.parse.unquote_plus(embed_url)
   # the current front end sends a query with embed included, which we remove here
   target_url = target_url.replace("embed/", "")
+  
 
   print('Creating signed URL for target URL: '+target_url)
 
@@ -119,7 +120,7 @@ def api_create_signed_url(embed_url, user, HOST, looker_api_sdk):
 
   sso_url = looker_api_sdk.create_sso_embed_url(body = target_sso_url)
 
-  print('Returning Signed URL: '+sso_url.url)
+  # print('Returning Signed URL: '+sso_url.url)
     
   return sso_url.url
 
@@ -165,7 +166,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
     
     parts = urlparse(self.path)
     query = parse_qs(parts.query)
-
+    print(query)
     if parts.path == '/auth':
       print("Invoking auth function with path: " + query['src'][0])
       self.do_auth(query['src'][0])

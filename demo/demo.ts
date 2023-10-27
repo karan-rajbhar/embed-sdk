@@ -399,8 +399,6 @@ const renderDashboard = (runtimeConfig: RuntimeConfig) => {
       .on('dashboard:tile:view', preventNavigation)
       // Give the embedded content a class for styling purposes
       .withClassName('looker-embed')
-      // Set the initial filters
-      .withFilters({ 'State / Region': 'California' })
       // Finalize the build
       .build()
       // Connect to Looker

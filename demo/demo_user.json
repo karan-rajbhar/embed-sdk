@@ -1,28 +1,41 @@
 {
   "external_user_id": "user1",
-  "first_name": "Pat",
-  "last_name": "Embed",
+  "first_name": "Karan",
+  "last_name": "Rajbhar",
   "session_length": 3600,
   "force_logout_login": true,
   "external_group_id": "group1",
-  "group_ids": [],
+  "group_ids": [
+    4
+  ],
   "permissions": [
     "access_data",
-    "see_looks",
-    "see_user_dashboards",
-    "explore",
-    "save_content",
-    "embed_browse_spaces",
+    "can_create_forecast",
+    "clear_cache_refresh",
+    "create_custom_fields",
+    "create_table_calculations",
+    "deploy",
+    "develop",
     "download_without_limit",
-    "create_alerts"
+    "explore",
+    "manage_spaces",
+    "mobile_app_access",
+    "save_content",
+    "schedule_look_emails",
+    "see_drill_overlay",
+    "see_lookml",
+    "see_lookml_dashboards,see_looks",
+    "see_pdts",
+    "see_sql",
+    "see_user_dashboards",
+    "send_to_integration",
+    "use_sql_runner"
   ],
   "models": [
-    "powered_by",
-    "thelook",
-    "extension",
-    "system__activity",
-    "app-lookml-diagram",
-    "hello_world"
+    "data_vis-demo",
+    "Model2_Demo",
+    "Privium_test",
+    "TestAutoGenModel,"
   ],
-  "user_attributes": { "locale": "en_US", "embed_encrypted": "abcd" }
+  "user_attributes": { "locale": "en_US" }
 }

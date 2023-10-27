@@ -17,3 +17,5 @@ server/**/*.js
 server/**/*.js.map
 .direnv
 server/public/
+.env
+/demo/looker.ini
