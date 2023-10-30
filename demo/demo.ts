@@ -110,15 +110,7 @@ const setupLook = (look: LookerEmbedLook) => {
     runButton.addEventListener('click', () => look.run())
   }
 
-  // Add a listener to the state selector and update the look filters when changed
-  const stateFilter = document.querySelector('#state')
-  if (stateFilter) {
-    stateFilter.addEventListener('change', (event) => {
-      look.updateFilters({
-        'users.state': (event.target as HTMLSelectElement).value,
-      })
-    })
-  }
+  
 }
 
 /**
@@ -399,8 +391,8 @@ const renderDashboard = (runtimeConfig: RuntimeConfig) => {
       .on('dashboard:tile:view', preventNavigation)
       // Give the embedded content a class for styling purposes
       .withClassName('looker-embed')
-      // Set the initial filters
-      .withFilters({ 'State / Region': 'California' })
+      // // Set the initial filters
+      // .withFilters({ 'State / Region': 'California' })
       // Finalize the build
       .build()
       // Connect to Looker

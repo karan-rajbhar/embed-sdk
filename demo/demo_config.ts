@@ -72,7 +72,7 @@ const lookerHost = 'mycompany.looker.com'
 
 // A dashboard that the user can see. Set to '-' or 0 to disable dashboard demo.
 // dashboardId can be a numeric id or a slug string.
-const dashboardId: number | string = 1
+const dashboardId: number | string = 13
 
 // A Look that the user can see. Set to 0 to disable look demo.
 // lookId must be numeric. Slugs are NOT supported.

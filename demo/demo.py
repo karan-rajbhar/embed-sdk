@@ -118,7 +118,7 @@ def api_create_signed_url(embed_url, user, HOST, looker_api_sdk):
   
 
   sso_url = looker_api_sdk.create_sso_embed_url(body = target_sso_url)
-
+  
   print('Returning Signed URL: '+sso_url.url)
     
   return sso_url.url
